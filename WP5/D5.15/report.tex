@@ -17,7 +17,22 @@
 
 \section{Developments in the core GAP system}
 
-%\subsection{libGAP}
+\subsection{libGAP: allowing 3rd party code to link GAP as a library}
+
+GAP 4.10.0 (November 2018) is the first official GAP release
+which provided an experimental way to allow 3rd party code to 
+link GAP as a library. It was based on the libGAP code by SageMath, 
+but different: while we aim to provide the same functionality, 
+we do not rename any symbols, and we do not provide the same API. 
+
+Since then, we improved the robustness of our libGAP implementation
+in GAP 4.10.1 (February 2019) and GAP 4.10.2 (June 2019) releases,
+and extended its API with new functionality (See Chapter 2 
+``Changes between GAP 4.9 and GAP 4.10'' of the 
+``GAP - Changes from Earlier Versions'' manual for the detailed
+descriptions). This allowed SageMath to drop its custom 
+modifications for GAP and use the official, documented and regularly 
+tested GAP interface instead.
 %
 %\subsection{other changes}
 %
